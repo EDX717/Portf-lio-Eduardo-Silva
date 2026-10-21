@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="Portfólio de desenvolvedor web em evolução." />
+  <title>Portfólio — Desenvolvedor Web</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080808'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='26' font-weight='700' text-anchor='middle' fill='%23fff'%3E%3C%3Ctspan fill='%23287BFF'%3E/%3C/tspan%3E%3E%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="Ir para o início">
+        <span>Edu&lt;</span><span class="accent">/</span><span>&gt;</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Abrir menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio" data-nav><span class="nav-num">01</span>Início</a></li>
+          <li><a href="#sobre" data-nav><span class="nav-num">02</span>Sobre mim</a></li>
+          <li><a href="#tecnologias" data-nav><span class="nav-num">03</span>Tecnologias</a></li>
+          <li><a href="#projetos" data-nav><span class="nav-num">04</span>Projetos</a></li>
+          <li><a href="#jornada" data-nav><span class="nav-num">05</span>Jornada</a></li>
+          <li><a href="#contato" data-nav><span class="nav-num">06</span>Contato</a></li>
+        </ul>
+
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <button class="lang-btn" type="button" data-lang="pt" aria-pressed="true">PT</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ 01 — INÍCIO ============ -->
+    <section class="section hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-num">01</span> Início</p>
+          <h1 id="hero-title" class="hero-title reveal">Desenvolvedor de Software Júnior<span class="accent">.</span>
+          </h1>
+          <p class="hero-lead reveal">Construindo meu caminho na programação, uma linha de código por vez.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projetos">Explorar projetos <span class="btn-arrow"
+                aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <figure class="photo-frame reveal" id="hero-photo">
+          <div class="photo-placeholder" id="hero-photo-placeholder">
+            <span class="photo-label">// sua foto aqui</span>
+          </div>
+        </figure>
+      </div>
+
+      <a class="scroll-hint" href="#sobre">
+        <span class="scroll-line" aria-hidden="true"></span>
+        <span>Role para continuar</span>
+      </a>
+    </section>
+
+    <!-- ============ 02 — SOBRE MIM ============ -->
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">02</span> Sobre</p>
+          <h2 id="sobre-title" class="section-title">Sobre mim</h2>
+        </header>
+
+        <!-- APRESENTAÇÃO PESSOAL: edite SITE.about em script.js -->
+        <div class="about-grid">
+          <div class="about-block reveal">
+            <h3 class="block-title">Minha história</h3>
+            <div class="prose" id="about-story"></div>
+          </div>
+          <div class="about-block reveal">
+            <h3 class="block-title">Interesses e objetivos</h3>
+            <div class="prose" id="about-interests"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 — TECNOLOGIAS E HABILIDADES ============ -->
+    <section class="section" id="tecnologias" aria-labelledby="tec-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">03</span> Stack</p>
+          <h2 id="tec-title" class="section-title">Tecnologias e habilidades</h2>
+        </header>
+
+        <!-- TECNOLOGIAS: edite SITE.technologies em script.js -->
+        <ul class="grid grid-tech" id="tech-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 04 — PROJETOS ============ -->
+    <section class="section" id="projetos" aria-labelledby="proj-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">04</span> Trabalhos</p>
+          <h2 id="proj-title" class="section-title">Projetos</h2>
+        </header>
+
+        <!-- PROJETOS: edite SITE.projects em script.js -->
+        <ul class="grid grid-projects" id="projects-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 05 — MINHA JORNADA ============ -->
+    <section class="section" id="jornada" aria-labelledby="jor-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">05</span> Evolução</p>
+          <h2 id="jor-title" class="section-title">Minha jornada</h2>
+        </header>
+
+        <!-- JORNADA DE APRENDIZADO: edite SITE.journey em script.js -->
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 06 — CONTATO ============ -->
+    <section class="section" id="contato" aria-labelledby="cont-title">
+      <div class="container contact-wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-num">07</span> Contato</p>
+          <h2 id="cont-title" class="section-title">Vamos conversar<span class="accent">.</span></h2>
+          <p class="section-lead">Os canais abaixo aparecem aqui assim que forem cadastrados.</p>
+        </header>
+
+        <!-- CONTATOS: edite SITE.contacts em script.js -->
+        <ul class="contact-list" id="contact-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#inicio" aria-label="Voltar ao topo">
+        <span>Edu&lt;</span><span class="accent">/</span><span>&gt;</span>
+      </a>
+      <nav aria-label="Rodapé">
+        <div class="lang-switch" role="group" aria-label="Selecionar idioma">
+  <span class="lang-label">Idioma</span>
+
+  <button
+    class="lang-btn"
+    type="button"
+    data-lang="pt"
+    aria-label="Selecionar português"
+    aria-pressed="true">
+    PT
+  </button>
+
+  <button
+    class="lang-btn"
+    type="button"
+    data-lang="en"
+    aria-label="Select English"
+    aria-pressed="false">
+    EN
+  </button>
+</div>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#jornada">Jornada</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">
+        <span class="mono">&copy; <span id="year">2026</span></span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span class="mono muted">// aprender, construir, repetir.</span>
+      </p>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
